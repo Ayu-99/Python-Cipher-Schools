@@ -1,17 +1,31 @@
 class Dog:
-    x = "mammal" #class variables - they can be accessed outside the class with class name
-    y = "dog"
-    def __init__(self):
+    #class variable
+    animal = "dog"
+
+    def __init__(self, breed, color):
         #instance variables
-        self.animal = "yes"
+        self.breed = breed
+        self.color = color
 
-    def fun(self):
-        print("I am a ", self.x)
-        print("I am a ", self.y)
+rodger = Dog("Pug", "brown")
+buzo = Dog("Bulldog", "black")
 
-d = Dog()
-print(Dog.x, Dog.y, d.animal)
-d.fun()
+print(Dog.animal, rodger.breed, rodger.color, rodger.animal)
+print(Dog.animal, buzo.breed, buzo.color, buzo.animal)
 
+#class variables can be accessed using class name or object
+#instance variables can only be accessed using object
+
+
+"""
+Instance variables are variables whose value is assigned isnide a class
+inside a constructor or a function, whereas the class variables are 
+variables whose value is assigned inside the class.
+
+
+Instance variables are for data unique to each object/instance
+class variables are shared by all instances.
+
+"""
 
 
