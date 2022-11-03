@@ -12,3 +12,29 @@ Create two other classes Rectangle and Triangle inheriting from Polygon class ha
 "Rectangle is a polygon" and "Triangle is a polygon"
 
 """
+
+#1
+class Student:
+    def __init__(self, name, marks):
+        self.student_name = name
+        self.student_marks = marks
+
+    def print(self):
+        print(self.student_name, self.student_marks)
+
+    def passOrFail(self):
+        if self.student_marks > 33:
+            print("student is passed")
+        else:
+            print("student is failed")
+
+
+s=Student("Ayushi", 25)
+s.print()
+s.passOrFail()
+
+
+
+
+#2
+
