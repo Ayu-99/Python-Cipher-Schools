@@ -56,3 +56,28 @@ b=B()
 
 
 .#3
+class Shape:
+    def print1(self):
+        print("This is a shape")
+
+class Polygon(Shape):
+    def print2(self):
+        print("Polygon is a shape")
+
+class Rectangle(Polygon):
+    def print3(self):
+        print("Rectangle is a Polygon")
+
+class Triangle(Polygon):
+    def print4(self):
+        print("Triangle is a Polygon")
+
+r=Rectangle()
+r.print3()
+r.print2()
+r.print1()
+
+t=Triangle()
+t.print4()
+t.print2()
+t.print1()
