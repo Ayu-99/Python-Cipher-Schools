@@ -37,4 +37,22 @@ s.passOrFail()
 
 
 #2
+class C:
+    def __init__(self):
+        print("Base Class C constructor called")
 
+class A(C):
+    def __init__(self):
+        C.__init__(self)
+        print("A derived class constructor called")
+
+class B(C):
+    def __init__(self):
+        C.__init__(self)
+        print("B derived class constructor called")
+
+a=A()
+b=B()
+
+
+.#3
