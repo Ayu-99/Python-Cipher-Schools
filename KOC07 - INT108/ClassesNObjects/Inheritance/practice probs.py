@@ -10,3 +10,25 @@ b. passOrFail - based on the marks, check whether student is pass or fail (pass 
 Create another class named Polygon inheriting the Shape class with function that prints "Polygon is a shape"
 Create two other classes Rectangle and Triangle inheriting from Polygon class having functions that say
 "Rectangle is a polygon" and "Triangle is a polygon"
+
+
+#1
+class Student:
+    def __init__(self, name, marks):
+        self.student_name=name
+        self.student_marks=marks
+
+    def print(self):
+        print(self.student_marks)
+        print(self.student_name)
+
+    def passOrFail(self):
+        if (self.student_marks > 33) :
+            print("student is passed")
+
+        else:
+            print("student is failed")
+
+s=Student("Ayushi",30)
+s.print()
+s.passOrFail()
