@@ -32,3 +32,21 @@ class Student:
 s=Student("Ayushi",30)
 s.print()
 s.passOrFail()
+
+
+#2
+class C:
+    def __init__(self):
+        print("C class")
+
+class A(C):
+    def __init__(self):
+        print("A class")
+
+class B(C):
+    def __init__(self):
+        print("B class")
+
+class D(A):
+    def __init__(self):
+        print("D class")
