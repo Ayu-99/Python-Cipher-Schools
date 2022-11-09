@@ -16,11 +16,15 @@
 # dictionary
 # string
 
-l=[1,2,3,4,5]
+l=["eat","sleep","code","dance","sleep again"]
 
-obj=enumerate(l,3)  #0 it takes by default
+obj=enumerate(l, 0)  #0 it takes by default
 # print(type(obj))
-print(list(obj))
+# print(list(obj))
+
+for idx, ele in obj:
+    print(idx, ele)
+
 """
 o/p
 ele idx
