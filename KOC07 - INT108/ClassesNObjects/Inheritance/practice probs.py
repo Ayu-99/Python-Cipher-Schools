@@ -50,3 +50,22 @@ class B(C):
 class D(A):
     def __init__(self):
         print("D class")
+        
+        
+#3
+class Shape:
+    def print(self):
+        print("This is a shape")
+
+class Polygon(Shape):
+    def print(self):
+        print("Polygon is a shape")
+
+class Rectangle(Polygon):
+    def print(self):
+        print("Rectangle is a polygon")
+    
+class Triangle(Polygon):
+    def print(self):
+        print("Triangle is a polygon")
+
