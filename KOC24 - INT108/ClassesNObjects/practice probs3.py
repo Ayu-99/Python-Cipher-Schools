@@ -19,7 +19,19 @@ else:
 
     
 #2
+#two methods
+#2a
+n=int(input())
+print(len(str(n)))
 
-    
+#2b
+n=int(input())
+count=0
+while n > 0:
+    rem = n%10
+    n = n//10
+    count += 1
+
+print(count)
     
     
