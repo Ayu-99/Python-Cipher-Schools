@@ -58,4 +58,23 @@ print(len(B))
 strng2 = "My name is kunal"
 print([i for i in strng2.split() if len(i) < 5])
 
+"""
+nested list comprehension
+
+nested loops
+"""
+# for i in range(1,5):
+#     for j in range(1,4):
+#         print(i, j)
+
+# l=[[j for j in range(1,4)] for i in range(1,5)]
+# print(l)
+
+
+numbers=[i*10 for i in range(1,6)]
+print(numbers)
+
+# map, lambda
+numbers1= list(map(lambda i: i*10, [i for i in range(1,6)]))
+print(numbers1)
 
