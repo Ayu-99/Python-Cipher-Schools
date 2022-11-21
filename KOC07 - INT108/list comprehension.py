@@ -78,3 +78,16 @@ print(numbers)
 numbers1= list(map(lambda i: i*10, [i for i in range(1,6)]))
 print(numbers1)
 
+#if else in list comprehension
+l=[]
+for i in range(1,6):
+    if i%2 ==0:
+        l.append("it is even")
+    else:
+        l.append("it is odd")
+
+print(l)
+
+l1= ["it is even" if i%2 == 0 else "it is odd" for i in range(1,6)]
+print(l1)
+
