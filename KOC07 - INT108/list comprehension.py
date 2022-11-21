@@ -40,5 +40,22 @@ print(l1)
 2. find all the numbers from 1-100 that have 6 in them
 3. count the number of spaces in a string
 4. find all the words in the string which have less than 5 characters
-
 """
+#1
+mylist = [x for x in range(1, 101) if x % 8 == 0]
+print(mylist)
+
+#2
+l = [i for i in range(1,101) if "6" in str(i)]
+print(l)
+
+#3
+A= 'aa bb cc ff '
+B = [c for c in A if c == ' ']
+print(len(B))
+
+#4
+strng2 = "My name is kunal"
+print([i for i in strng2.split() if len(i) < 5])
+
+
