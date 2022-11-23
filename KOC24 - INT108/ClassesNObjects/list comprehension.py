@@ -58,4 +58,22 @@ print(l1)
 3. count the number of spaces in a string
 4. find all the words in the string which have less than 5 characters
 """
+#1
+l=[i for i in range(1,101) if i%8==0]
+print(l)
 
+#2
+l1=[i for i in range(1,101) if "6" in str(i)]
+print(l1)
+
+#3
+s="ab d r tfghi c"
+l=[i for i in s if i == " "]
+# print(l)
+print(len(l))
+
+#4
+s = "this is a great day seems like"
+# o/p-["this", "is", "a", "day", "like"]
+l1=[i for i in s.split() if len(i) < 5]
+print(l1)
