@@ -38,4 +38,17 @@ print(l)
 l1=[(i,j) for j in range(1,3) for i in range(1,4)]
 print(l1)
 
+#if else
+l=[]
+for i in range(1,11):
+    if i%2 == 0:
+        l.append("it is even")
+    else:
+        l.append("it is odd")
+
+print(l)
+
+l1=["it is even" if i%2 ==0 else "it is odd" for i in range(1,11)]
+print(l1)
+
 
