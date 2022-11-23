@@ -1,13 +1,11 @@
 """
 #1
 You will be given multiple substrings(4), and you have to concatenate them using $
-
 i/p
 "hi" "hello" "how u doing" "nice weather"
 
 o/p
-"hi$hello$how u doing$nice weather"
-
+"hi$hello$how$u$doing$nice$weather"
 
 #2
 create a python class Birthday that takes two variables-
