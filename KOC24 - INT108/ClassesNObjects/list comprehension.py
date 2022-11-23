@@ -52,3 +52,10 @@ l1=["it is even" if i%2 ==0 else "it is odd" for i in range(1,11)]
 print(l1)
 
 
+"""
+1. find all the numbers from 1-100 divisible by 8
+2. find all the numbers from 1-100 that have 6 in them
+3. count the number of spaces in a string
+4. find all the words in the string which have less than 5 characters
+"""
+
