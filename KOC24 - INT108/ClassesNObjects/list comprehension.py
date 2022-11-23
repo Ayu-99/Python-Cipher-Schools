@@ -18,7 +18,24 @@ Adv-
 
 """
 
+s="abcdefghi"
+l=[]
+for i in s:
+    l.append(i)
+print(l)
+
+l1=[i for i in s]
+print(l1)
 
 
+#nested list comprehension
+l=[]
+for i in range(1,4):
+    for j in range(1,3):
+        l.append((i,j))
+print(l)
+
+l1=[(i,j) for j in range(1,3) for i in range(1,4)]
+print(l1)
 
 
