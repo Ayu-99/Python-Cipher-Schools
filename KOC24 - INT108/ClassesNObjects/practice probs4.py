@@ -41,3 +41,11 @@ b : 2
 c : 3
 
 """
+
+#1
+n=int(input("How many substrings you want to give:"))
+l=[]
+for i in range(0,n):
+    a=input()
+    l.append(a)
+print('$'.join(l))
