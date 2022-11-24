@@ -49,3 +49,21 @@ for i in range(0,n):
     a=input()
     l.append(a)
 print('$'.join(l))
+
+
+#2
+class Birthday:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+
+    def incrementAge(self):
+        return self.age + 1
+
+s=Birthday("Jack", 23)
+print(s.incrementAge())
+
+#3
+use dictionary to keep the count of each character
+key == character
+value == count of each character
