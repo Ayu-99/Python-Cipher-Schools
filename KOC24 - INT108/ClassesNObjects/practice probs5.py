@@ -8,3 +8,14 @@ Expected Output : 'world .py hello'
 
 4. Write a Python class named Circle constructed by a radius and two methods which will compute the area and the perimeter of a circle.
 """
+
+class ReverseClass:
+    def reverseTheString(self, s):
+        l = list(s.split(" "))
+        l1 = l[::-1]
+        s1 = " ".join(l1)
+        return s1
+
+r = ReverseClass()
+finalString = r.reverseTheString("hello .py world")
+print(finalString)
