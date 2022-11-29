@@ -43,3 +43,21 @@ Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values h
 
 
 """
+
+#1
+""" 0123456789..
+s= "EnjoyYourCoffee"
+s1= "Enjoy Your Coffee"  [5,9]
+"""
+s1=""
+s=input()
+idx=[5,9,2]
+for i in range(len(s)):
+    if i in idx:
+        s1 += " "
+    s1 += s[i]
+
+print(s1)
+
+#2
+
