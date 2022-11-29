@@ -60,4 +60,12 @@ for i in range(len(s)):
 print(s1)
 
 #2
+l=[1,2,5,2,3]
+target=2
+l.sort() #ascending order - non decreasing order
+output=[]
+for i in range(len(l)):
+    if l[i] == target:
+        output.append(i)
 
+print(output)
