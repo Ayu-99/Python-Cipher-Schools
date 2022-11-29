@@ -69,3 +69,15 @@ for i in range(len(l)):
         output.append(i)
 
 print(output)
+
+#3
+sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+maxWords=0
+for i in sentences:
+    countOfWords = len(list(i.split()))
+    if  countOfWords > maxWords:
+        maxWords = countOfWords
+
+print(maxWords)
+
+#4
