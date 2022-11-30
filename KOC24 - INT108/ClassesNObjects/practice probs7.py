@@ -19,3 +19,14 @@ Explanation: After sorting, nums is [1,2,2,3,5].
 The indices where nums[i] == 2 are 1 and 2.
 
 """
+
+#1
+s=input()
+l=list(map(int,input().split(",")))
+a=""
+for i in range(len(s)):
+    if i in l:
+        a+=" "+s[i]
+    else:
+        a +=s[i]
+print(a)
