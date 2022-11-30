@@ -30,3 +30,15 @@ for i in range(len(s)):
     else:
         a +=s[i]
 print(a)
+
+
+#2
+l=[1,2,5,2,3]
+target=2
+l.sort()
+output=[]
+for i in range(len(l)):
+    if l[i] == target:
+        output.append(i)
+
+print(output)
