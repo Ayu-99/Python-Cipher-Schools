@@ -67,4 +67,21 @@ for i in range(len(l)):
 print(output)
 
 
+#4
+l=[1,2,2,2,1,1,3]
+d={}
+for i in l:
+    if i in d:
+        d[i] += 1
+    else:
+        d[i] = 1
+
+l=list(d.values())    #l=[3,3,1]
+#set
+s = set(l)   #s = {3,1}
+
+if len(l) != len(s):
+    print("false")
+else:
+    print("true")
 
