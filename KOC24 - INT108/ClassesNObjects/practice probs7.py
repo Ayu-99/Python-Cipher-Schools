@@ -66,6 +66,14 @@ for i in range(len(l)):
 
 print(output)
 
+#3
+sentences = ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+l=[]
+for i in sentences:
+    a=len((i.split()))
+    l.append(a)
+print(max(l))
+
 
 #4
 l=[1,2,2,2,1,1,3]
