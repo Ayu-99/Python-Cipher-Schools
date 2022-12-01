@@ -92,4 +92,26 @@ if len(l) != len(s):
     print("false")
 else:
     print("true")
+    
+    
+from collections import defaultdict
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m = map(int, input().split())
+dA=defaultdict(list)
+for i in range(1,n+1):
+    word = input()
+    dA[word].append(str(i))  #a--->[1,2]
+l=[]
+for i in range(m):
+    l.append(input())
+
+for i in l:
+    if(len(dA[i]) == 0) :
+        print(str(-1))
+    else:
+        print(" ".join(dA[i]))
+
+    
+        
+    
 
