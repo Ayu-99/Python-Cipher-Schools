@@ -31,3 +31,26 @@ class Solution:
                 count += 1
         
         return count
+
+    
+#2
+class Solution:
+    def commonChars(self, words: List[str]) -> List[str]:
+        result = []
+        for i in set(words[0]):
+            count = words[0].count(i)
+            occurences = 1
+            for j in range(1, len(words)):
+                if i in words[j]:
+                    occurences += 1
+                    count = min(count, words[j].count(i))
+        
+                else:
+                    break
+        
+            if occurences  == len(words):
+                for k in range(count):
+                    result.append(i)
+                
+        return result
+        
