@@ -18,8 +18,10 @@ try:
 except:
     print("runtime error occured")
 
-  
-=5
+ 
+
+#Multiple exceptions handling
+a=5
 b=0
 c=10
 #try block, except block
@@ -34,3 +36,25 @@ except ZeroDivisionError:
 
 except NameError:
     print("name error occured")
+    
+    
+#raise an exception
+a=5
+b=0
+c=10
+#try block, except block
+try:
+    raise ZeroDivisionError
+    # print(c//a)
+    # print(d)
+    # print(a//b) #division is by 0 is invalid
+
+
+except ZeroDivisionError:
+    print("runtime error occured")
+
+except NameError:
+    print("name error occured")
+
+    
+#finally block    
