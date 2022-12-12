@@ -58,3 +58,17 @@ except NameError:
 
     
 #finally block    
+"""
+Finally is always executed after try and except block. The final block always executes after normal termination
+of try block or after try block terminates due to some exception.
+
+"""
+a=5
+b=0
+c=10
+#try block, except block
+try:
+    raise ZeroDivisionError
+
+finally:
+    print("inside finally block")
