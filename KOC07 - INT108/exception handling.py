@@ -17,3 +17,20 @@ try:
 
 except:
     print("runtime error occured")
+
+  
+=5
+b=0
+c=10
+#try block, except block
+try:
+    print(c//a)
+    print(d)
+    print(a//b) #division is by 0 is invalid
+
+
+except ZeroDivisionError:
+    print("runtime error occured")
+
+except NameError:
+    print("name error occured")
