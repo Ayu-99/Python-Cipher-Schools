@@ -68,3 +68,13 @@ dabc
 
 ab*c --- abc, abxyzc, 
 """
+
+
+"""
+[]- square bracket (specifies range of characters)
+[0-3] [0123]
+[a-c] [abc]
+[^0-3] except 0,1,2,3
+[^a-c] means any character except a,b,c
+"""
+
