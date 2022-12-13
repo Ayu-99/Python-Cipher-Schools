@@ -85,4 +85,9 @@ match = re.findall(regex, s)
 print(match)
 
 
+p = re.compile('[a-e]')  #p=[abcde]
+s = "This batch students.789 doesn't respond 123 and are sleeping students. 123"
+match = re.findall(p, s)
+print(match)
+
 
