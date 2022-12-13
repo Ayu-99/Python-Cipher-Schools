@@ -10,9 +10,61 @@ a string or set of strings.
 the first match or else none.
 
 """
+#
+# import re
+# s = "This batch students doesn't respond and are sleeping students."
+# match = re.search(r'students', s)
+# print("start index: ", match.start())
+# print("end index: ", match.end())
 
+
+"""
+Metacharacters- ., \, | , [], ^, ?, *, +
+"""
+
+# import re
+# s = "This batch students.doesn't respond and are sleeping students."
+# match = re.search(r'\.', s)
+# print("start index: ", match.start())
+# print("end index: ", match.end())
+
+"""
+^ - matches the beginning
+"""
 import re
-s = "This batch students doesn't respond and are sleeping students."
-match = re.search(r'students', s)
-print("start index: ", match.start())
-print("end index: ", match.end())
+s = "This batch students.doesn't respond and are sleeping students."
+match = re.search(r'[^s]', s)
+print("start index: ", match)
+
+"""
+$ - dollar (matches the end)
+s$ - strings that ends with s like students, students
+"""
+
+"""
+. - dot (matches one single character except for newline character)
+
+[a.b.]
+
+acby
+adbi
+ajbo
+
+"""
+"""
+? - (question mark)
+checks if string before the question mark in regex occurs at least once or not at all.
+
+ab?c
+
+ab
+acb
+dabc
+
+"""
+
+"""
+* - star (matches zero or more occurences of regex preceeding the * symbol)
+
+ab*c --- abc, abxyzc, 
+"""
