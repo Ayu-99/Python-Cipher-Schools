@@ -47,4 +47,26 @@ except ZeroDivisionError:
 except KeyError:
     print("key error occurred")
     
+# finally block and raise
+
+try :
+    a = int(input())
+    b = int(input())
+    print(a//b)
+    d={}
+    print(d[5])
+    # raise KeyError
+
+except ZeroDivisionError:
+    print("error occurred")
+    #different operations
+
+except KeyError:
+    print("key error occurred")
+
+finally:
+    print("in finally block")
+
+
+
 
