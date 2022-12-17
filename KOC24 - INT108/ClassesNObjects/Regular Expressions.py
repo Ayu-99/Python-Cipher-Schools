@@ -10,5 +10,18 @@ print("start index: ", match.start())
 print("end index: ", match.end())
 
 
+"""
+Meta characters - Regular expressions
+., \, |, [], ^, ?, *, +
 
+"""
+
+import re
+s = "This batch doesn't respond and are sleeping."
+try:
+    match = re.search(r'\.', s)  #first occurence it will give
+    print("start index: ", match.start())
+    print("end index: ", match.end())
+except AttributeError:
+    print("error occurred")
 
