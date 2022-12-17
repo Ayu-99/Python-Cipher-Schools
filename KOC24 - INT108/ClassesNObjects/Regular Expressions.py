@@ -25,3 +25,16 @@ try:
 except AttributeError:
     print("error occurred")
 
+"""
+^ --> matches the beginning
+"""
+import re
+s = "the students are not listening."
+try:
+    match = re.findall('^t', s)  #first occurence it will give
+    if match:
+        print("yes, string starts with s")
+    else:
+        print("does not start with s")
+except AttributeError:
+    print("error occurred")
