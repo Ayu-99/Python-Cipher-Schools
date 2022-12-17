@@ -38,3 +38,55 @@ try:
         print("does not start with s")
 except AttributeError:
     print("error occurred")
+    
+"""
+$ - matching the end
+"""
+
+"""
+. --> matches one single character except for newline character
+* --> matches with multiple characters
+"""
+import re
+s = "the students ae not listening"
+try:
+    match = re.findall('a*e', s)  #first occurence it will give
+    print(match)
+    if match:
+        print("found the occurrence")
+    else:
+        print("did not find")
+except AttributeError:
+    print("error occurred")
+
+
+"""
+? --> zero or more occurences
+"""
+
+# import re
+# s = "the students ae not listening"
+# try:
+#     match = re.findall('a?e', s)  #first occurence it will give
+#     if match:
+#         print("found the occurrence")
+#     else:
+#         print("did not find")
+# except AttributeError:
+#     print("error occurred")
+
+"""
+[]  --> set of characters
+"""
+# import re
+# s = "the students are not listening"
+# try:
+#     match = re.findall('[a-d]', s)  #first occurence it will give
+#     if match:
+#         print(match)
+#     else:
+#         print("did not find")
+# except AttributeError:
+#     print("error occurred")
+
+    
