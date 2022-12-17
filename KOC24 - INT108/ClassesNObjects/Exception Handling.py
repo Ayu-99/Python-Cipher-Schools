@@ -31,4 +31,20 @@ except:
     print("error occurred")
 
 
+    # Handling multiple exceptions
+
+try :
+    a = int(input())
+    b = int(input())
+    print(a//b)
+    d={}
+    print(d[5])
+
+except ZeroDivisionError:
+    print("error occurred")
+    #different operations
+
+except KeyError:
+    print("key error occurred")
+    
 
