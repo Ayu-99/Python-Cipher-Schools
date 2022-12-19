@@ -20,5 +20,16 @@ it will be overriden, but if the file is not created, then it will create a new 
 # file = open('text1.txt', 'r')
 # print(file.read())
 
-file = open('text1.txt', 'r')
-print(file.read(5))
+# file = open('text1.txt', 'r')
+# print(file.read(5))
+
+# file = open('text1.txt', 'w')
+# file.write("overrride data")
+# file.close()
+
+# file = open('text1.txt', 'r')
+# print(file.read())
+
+file = open('text2.txt', 'w')
+file.write("new file")
+file.close()
