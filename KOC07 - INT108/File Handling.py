@@ -33,3 +33,17 @@ it will be overriden, but if the file is not created, then it will create a new 
 file = open('text2.txt', 'w')
 file.write("new file")
 file.close()
+
+# with open('text1.txt') as f:
+#     data = f.read()
+# print(data)
+#
+# with open('text2.txt', 'w') as f:
+#     f.write("new daaaataaa")
+
+with open('text1.txt', 'r') as f:
+    data = f.readlines()
+    for line in data:
+        word = line.split()
+        print(word)
+
