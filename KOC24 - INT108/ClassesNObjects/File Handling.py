@@ -20,3 +20,7 @@ print(file.read())
 
 file = open('text2.txt', 'w')
 file.write('new content of the file')
+
+file = open('text1.txt', 'a')
+file.write('| adding few more new content in the file')
+file.close()
