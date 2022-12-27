@@ -7,6 +7,8 @@
 2. display the matrix
 
 """
+
+#1
 print("Enter number of rows: ")
 rows = int(input())
 print("Enter number of columns: ")
@@ -22,3 +24,25 @@ for i in range(rows):
     matrix.append(x)
 
 print(matrix)
+
+
+#2
+"""
+     0  1  2 
+[ 0 [1, 2, 3], 
+  1 [4, 5, 6], 
+  2 [7, 8, 9] ]
+
+i=0,1,2
+i = 0 , j = [0,1,2]
+i=0 , j=0  matrix[0][0]
+i=0 , j=1  matrix[0][1]
+i=0 , j=2  matrix[0][2]
+
+**********************
+i=1 , j =[0,1,2]
+i=1 j = 0 matrix[1][0]
+"""
+for i in range(0, rows):
+    for j in range(0, cols):
+        print(matrix[i][j])
