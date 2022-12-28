@@ -58,11 +58,11 @@ try :
     # raise KeyError
 
 except ZeroDivisionError:
-    print("error occurred")
+    print("error occurred", end=" ")
     #different operations
 
 except KeyError:
-    print("key error occurred")
+    print("key error occurred", end=" ")
 
 finally:
     print("in finally block")
